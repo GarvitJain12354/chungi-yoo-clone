@@ -1,0 +1,576 @@
+@font-face {
+    font-family: kobe;
+    src: url(./KobeWeb-Regular.ttf);
+}
+@font-face {
+    font-family: voyage;
+    src: url(./Voyage-Regular.ttf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Regular.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: voyage;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#nav{
+    width: 100vw;
+    height: 5vw;
+    background-color: #f3eee8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    position: fixed;
+    z-index: 999;
+
+}
+#nav>h1{
+    font-family: voyage;
+    width: 5%;
+    line-height: .7;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.2vw
+}
+#nav>#icon{
+    height: 50px;
+    width: 50px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+#nav>#icon:hover .line{
+    transform: rotate(-180deg);
+    cursor: pointer;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: .5s ease;
+}
+#nav>img{
+    height: 3vw;
+    cursor: pointer;
+}
+#nav>img:hover{
+    animation: nav 1s ease-in-out  infinite ;
+
+}
+@keyframes nav {
+    0%{
+        transform: rotate(0%);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    /* 80%{
+        transform: rotate(-50deg);
+    } */
+}
+#page1{
+
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #f3eee8;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#page1>h1{
+    position: relative;
+    font-family: voyage;
+    font-size: 10vw;
+    width: 80%;
+    text-align: center;
+    font-weight: 300;
+    line-height: .8;
+    z-index: 2;
+    margin-top: 10%;
+}
+#of{
+    width: 60%;
+    position: relative;
+    background-color: transparent;
+    margin-top: -2vw;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 80px;
+    align-items: center;
+    padding: 0 100px;
+    position: relative;
+    z-index: 2;
+
+
+}
+#of>h1{
+    font-size: 10vw;
+    font-weight: 300;
+    margin-top: -20px;
+}
+#of>#brc{
+    width: 500px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 100px;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+   
+}
+#of>#brc>p{
+    font-family: kobe;
+    font-weight: 700;
+}
+#of>#ofc{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 10px;
+    /* margin-right: 5vw; */
+    margin-left: -20px;
+}
+#of>img{
+    position: absolute;
+    height: 4vw;
+}
+#im1{
+    top: -20%;
+    left: 55%;
+}
+#im2{
+    left: 55%;
+    bottom: -5%;
+}
+#page1>h2{
+    font-size: 10vw;
+    width: 40%;
+    font-weight: 100;
+    line-height: .8;
+    text-align: center;
+    z-index: 99;
+    position: relative;
+
+    
+}
+#smile{
+    position: absolute;
+    height: 6vw;
+    animation: smile 1.9s ease-in-out  infinite ;
+top: 14%;
+z-index: 99;
+right: 19%;
+}
+@keyframes smile {
+    0%{
+        transform: rotate(0%);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    
+}
+#art{
+    position: relative;
+    margin-top: -14%;
+    
+    
+}
+#art>h1{
+    font-size: 50vw;
+    font-weight: 100;
+    color: #f8c1ca;
+}
+#page1>h3{
+    position: absolute;
+    white-space: nowrap;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 3vw;
+    font-family: gilroy;
+    top: 60%;
+    left: 35%;
+}
+#page1>h3>span{
+    font-size:1.5vw ;
+}
+#page2{
+
+   min-height:100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #f3eee8;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    position: relative;
+}
+#page2>h1{
+    font-size: 5vw;
+    width: 50%;
+    
+    font-weight: 100;
+    text-align: center;
+    line-height: 1;
+}
+#page2>h2{
+    font-size: 15vw;
+    width: 100%;
+    text-align: center;
+    line-height: .9;
+    margin-top: 5vw;
+    font-weight: 500;
+}
+#page2>#svg{
+   position: absolute;
+   width: 42vw;
+   height: 10vw;
+   background-color:transparent;
+   top: 71%;
+   z-index: 999;
+}
+#page3{
+
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #f3eee8;
+  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.curve{
+    min-height: 200vh;
+    width: 100%;
+    background-color: #ffe699;
+    border-top-left-radius:50vw ;
+    border-top-right-radius:50vw ;
+    margin-top: 40vw;
+    display: flex;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+}
+#work{
+    height: 50vw;
+    width: 50vw;
+    /* background-color: pink; */
+    margin-top: -15vw;
+    cursor: pointer;
+
+}
+.card{
+    margin-left: -5vw;
+    height: 30vw;
+    width: 22vw;
+    border-radius: 20px;
+    position: absolute;
+   top: 5%;
+    overflow: hidden;
+    /* margin-top: 10vw; */
+    /* top: 38%; */
+    transition: .5s ease;
+    /* background-color: red; */
+}
+.card>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#work .card:nth-child(2){
+    left: 55%;
+    transform: rotate(5deg);
+    
+    z-index: 1;
+}
+#work .card:nth-child(1){
+    left: 15%;
+    transform: rotate(-15deg);
+    z-index: 3;
+    /* margin-top: -2vw; */
+    
+
+}
+#work:hover .card:nth-child(1){
+transform: rotate(-20deg);
+    /* top:36%; */
+
+}
+#work:hover .card:nth-child(2){
+    transform: rotate(20deg);
+    /* margin-top: -.1px; */
+    /* top:36%; */
+
+}
+#work>h1{
+    font-size: 6vw;
+    position: absolute;
+    top: 70%;
+    font-weight: 500;
+    left: 30%;
+    transition: .5s ease;
+}
+#c2 #work>h1{
+    font-size: 8vw;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transition: .5s ease;
+    font-weight: 500;
+}
+
+#work:hover h1{
+    font-size: 7vw;
+    /* top: 72%; */
+}
+#c2{
+    position: relative;
+    background-color: #fff;
+    margin-top: -40vw;
+}
+#c2 #work:hover h1{
+    font-size: 11vw;
+}
+#c2 #work .card:nth-child(1){
+    margin-top: -3vw;
+    /* left: 35%; */
+}
+#page3>.curve:nth-child(3){
+background-color: #f3eee8;
+min-height: 100vh;
+
+}
+#page3>.curve:nth-child(3) #work>h1{
+    left: 20%;
+    top: 64%;
+    font-size: 7vw;
+    white-space: nowrap;
+}
+#page3>.curve:nth-child(3) #work:hover h1{
+    font-size: 9vw;
+}
+#page4{
+    min-height: 100vh;
+    width: 100%;
+}
+#ypage{
+    /* padding: 2vw 0; */
+    min-height: 200vh;
+    width: 100vw;
+    background-color: #ffe699;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#ppage{
+    width: 100vw;
+    height: 80vh;
+    background-color: #f8c1ca;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#ynav{
+    width: 100%;
+    height: 3vw;
+    background-color: #e3dacd;
+    position: relative;
+    top: 0%;
+}
+#bar{
+    width: 350px;
+    border-radius: 50px;
+    height: 45px;
+    background-color: #e3dacd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: -55%;
+    transform: translate(-50%,0%);
+}
+#bar>h2{
+    font-family: kobe;
+    
+}
+#ypage>h1{
+    font-size: 10vw;
+    line-height: 1;
+    margin-top: 4vw;
+    font-weight: 100;
+    position: relative;
+    z-index: 9;
+}
+#ysvg{
+    height: 500px;
+    width: 350px;
+    /* background-image: url(https://www.chungiyoo.com/img/bright.svg); */
+    background-size: cover;
+    position: absolute;
+    left: 21%;
+    top: 4%;
+}
+#ysvg{
+    object-fit: cover;
+
+
+}
+
+#ypage>h2{
+    font-size: 10vw;
+    line-height: 1;
+    /* margin-top: 2vw; */
+    font-weight: 100;
+    position: relative;
+    z-index: 9;
+}
+
+#ypage>img{
+    position: relative;
+    z-index: 1;
+    margin-top: -2vw;
+}
+#ypage>h3{
+    font-size: 10vw;
+    font-weight: 100;
+    line-height: 1;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    margin-top: -6vw;
+    line-height: .9;
+}
+
+#contact{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 24%;
+    right: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: rotate(15deg); */
+}
+#contact>h1{
+    font-family: kobe;
+    width: 40%;
+    font-size: 3vw;
+    line-height: .7;
+    transform: rotate(-25deg);
+    text-align: center;
+    transition: .3s ease;
+}
+.ar1{
+    width: 40px;
+    height: 80px;
+    /* background-color: red; */
+    position: absolute;
+top: -12%;
+transform: rotate(35deg);
+left: 100%;
+}
+.ar1>img{
+    height: 100%;
+    object-fit: cover;
+}
+#ar2{
+    top: 100%;
+    left: 0%;
+    transform: rotate(-152deg);
+    opacity: 0;
+    transition: .3s ease;
+
+}
+#contact:hover h1{
+    transform: rotate(0deg);
+}
+#contact:hover #ar2{
+    opacity: 1;
+}
+#smile2{
+    height: 7vw;
+    position: absolute;
+left: 50%;
+top: -7%;
+transform: translate(-50%,0%);
+animation: s 1.9s ease  infinite ;
+
+}
+@keyframes s {
+    0%{
+        transform: translate(-50%,0%) rotate(20deg);
+    }
+    50%{
+        transform: translate(-50%,0%) rotate(-20deg);
+    }
+
+}
+#smile2>img{
+    height: 100%;
+    object-fit: cover;
+    
+}
+#ppage>h1{
+    margin-top: -9vw;
+    font-size: 10vw;
+    color: #d73234;
+}
+#ppage>h3{
+    font-family: GILROY;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    color: #d73234;
+    opacity: .8;
+
+}
+#bottom{
+    width: 100vw;
+    display: flex;
+    font-family: gilroy;
+    color: #d73234;
+    position: absolute;
+    bottom: 0%;
+    gap: 50px;
+    padding: 10px 10px;
+}
+#bottom>h2{
+    font-family: gilroy;
+    font-family: 15px;
+}
